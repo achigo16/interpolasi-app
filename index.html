@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Interpolasi Polinom | Adityawan Chandra</title>
+
+		<link rel="stylesheet" href="./assets/css/swiper.min.css" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
+	<body>
+		<div class="slides">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slide-1">
+					<div class="container">
+						<div class="text-1">
+							<h1>Interpolasi Polinom</h1>
+							<div>
+								<h5>Oleh</h5>
+								<h2>Adityawan Chandra</h2>
+								<h3>TIF 19-A K</h3>
+							</div>
+						</div>
+						<div class="text-2">
+							<h1>Metode Numerik</h1>
+							<img class="icon" src="./assets/img/math-icon.png" />
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide slide-2">
+					<div class="container">
+						<div class="item-1">
+							<h2>Apa itu Interpolasi?</h2>
+							<p>
+								Interpolasi adalah suatu teknik mencari harga suatu fungsi pada
+								suatu titik diantara 2 titik yang nilai fungsi pada ke-2 titik
+								tersebut sudah diketahui. Interpolasi sendiri terbagi menjadi
+								beberapa jenis berdasarkan dengan fungsi dan cara
+								penginterpolasiannya.
+							</p>
+						</div>
+
+						<div class="item-2">
+							<div>
+								<img class="icon" src="./assets/img/math-icon-1.png" />
+							</div>
+
+							<div>
+								<h2>Metode Interpolasi</h2>
+								<div>
+									<h5>Interpolasi Linier -</h5>
+									<h5>Interpolasi Kuadratik -</h5>
+									<h5>Interpolasi Polinomial -</h5>
+									<h5>Interpolasi Lagrange -</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide slide-3">
+					<div class="container">
+						<h1>Interpolasi Linear</h1>
+						<div>
+							<h3>
+								Interpolasi lanjar adalah interpolasi dua buah titik dengan
+								sebuah garis lurus.
+							</h3>
+
+							<h4>
+								Misalkan kita memiliki m buah data x, dan tiap-tiap x mempunyai
+								pasangan y, yang merupakan fungsi x, dengan perkataan lain y =
+								f(x). Untuk satu harga x dengan x terletak diantara dua nilai, x
+								yang ada pada himpunan data, misalnya Interpolasi linear
+								meramalkan nilai y = f(x) dapat dilakukan dengan menganggap
+								bahwa yk dan yk+1 dihubungkan oleh suatu garis lurus, seperti
+								pada gambar berikut
+							</h4>
+
+							<img src="./assets/img/rumus-1.png" />
+						</div>
+						<img class="icon" src="./assets/img/math-icon.png" />
+					</div>
+				</div>
+
+				<div class="swiper-slide slide-4">
+					<div class="container">
+						<h1>Interpolasi Kuadatrik</h1>
+						<div>
+							<h3>
+								Misalnya kita menginterpolasikan pada titik, dimana Xk <= X <=
+								Xk+1. kita pilih tiga titik (Xk-1, Yk-1), (Xk, Yk) dan (Xk+1,
+								Yk+1). Akan ditentukan persamaan kuadrat yang melalui titik
+								tersebut.
+							</h3>
+							<h3>
+								Dalam hal ini disebelah kanan titik yang akan diinterpolasi ada
+								satu data, sedangkan disebelah kiri ada dua data. Cara
+								sebaliknya juga dapat digunakan.
+							</h3>
+
+							<img src="./assets/img/rumus-2.png" />
+						</div>
+						<img class="icon" src="./assets/img/math-icon-1.png" />
+					</div>
+				</div>
+
+				<div class="swiper-slide slide-5">
+					<div class="container">
+						<img class="icon" src="./assets/img/math-icon.png" />
+						<div class="item-2">
+							<h2>
+								Pada interpolasi lagrange kita menggunakan n titik, dan akan
+								ditentukan polinom derajat n-1 yang melalui n titik tersebut.
+								Pemilihan titik-titik yang akan digunakan harus diperhatikan,
+								karena mungkin akan timbul galat akibat ketidak tepatan
+								pemilihan titik-titik yang dipakai.
+							</h2>
+							<h2>
+								Anggap kita memiliki n data (X1,Y1), (X2,Y2),….,(Xn,n) Persamaan
+								umumpolinom pangkat n-1 adalah:
+							</h2>
+							<img src="./assets/img/rumus-3.png" />
+							<h2>Polinom ini akan melalui n titik, maka:</h2>
+							<img src="./assets/img/rumus-4.png" />
+						</div>
+						<div class="item-1">
+							<h1>Interpolasi Lagrange</h1>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide slide-5">
+					<div class="container">
+						<img class="icon" src="./assets/img/math-icon.png" />
+						<div class="item-2">
+							<h2>
+								Dengan cara serupa pada interpolasi kuadratik dapat ditunjukan
+								bahwa a0, a1,…, an adalah unik. Untuk menyelesaikan persamaan,
+								didefinisikan polinom-polinom derajat n-1 sebagai berikut
+							</h2>
+							<img src="./assets/img/rumus-7.png" />
+							<img src="./assets/img/rumus-8.png" />
+							<img src="./assets/img/rumus-5.png" />
+						</div>
+						<div class="item-1">
+							<h1>Interpolasi Lagrange</h1>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide slide-5">
+					<div class="container">
+						<img class="icon" src="./assets/img/math-icon.png" />
+						<div class="item-2">
+							<img src="./assets/img/rumus-6.png" />
+						</div>
+						<div class="item-1">
+							<h1>Interpolasi Lagrange</h1>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide slide-6">
+					<div class="container">
+						<h1>Penerapan Interpolasi</h1>
+						<h2>Di Kehidupan Sehari-hari</h2>
+						<img class="icon" src="./assets/img/math-icon-1.png" />
+					</div>
+				</div>
+
+				<div class="swiper-slide slide-7">
+					<div class="container">
+						<div class="item-1">
+							<h1>Prediksi Jumlah Penduduk</h1>
+						</div>
+						<div class="item-2">
+							<h2>
+								Perkirakan atau prediksi jumlah penduduk Gunungpati pada tahun
+								2005 berdasarkandata tabulasi berikut:
+							</h2>
+
+							<img class="table" src="./assets/img/rumus-9.png" />
+						</div>
+						<img class="icon" src="./assets/img/math-icon.png" />
+					</div>
+				</div>
+
+				<div class="swiper-slide slide-7">
+					<div class="container">
+						<div class="item-1">
+							<h1>Prediksi Jumlah Penduduk</h1>
+						</div>
+						<div class="item-2">
+							<h5>
+								Penyelesaian:
+							</h5>
+							<h5>
+								Dipunyai : <i>x<span>0</span></i> = 2000,
+								<i>x<span>1</span></i> = 2010, <i>y<span>0</span></i> = 179.300,
+								<i>y<span>1</span></i> = 203.200.
+							</h5>
+							<h5>
+								Ditanya : Prediksi jumlah penduduk Gunungpati pada tahun 2005.
+							</h5>
+							<h5>
+								Ingat :
+							</h5>
+
+							<img class="rumus-1" src="./assets/img/rumus-10.png" />
+
+							<h5>Misalkan <i>x</i> = 2005</h5>
+
+							<img class="rumus-2" src="./assets/img/rumus-11.png" />
+						</div>
+						<img class="icon" src="./assets/img/math-icon.png" />
+					</div>
+				</div>
+
+				<div class="swiper-slide slide-7">
+					<div class="container">
+						<div class="item-1">
+							<h1>Prediksi Jumlah Penduduk</h1>
+						</div>
+						<div class="item-2">
+							<h4>
+								Jadi, diperkirakan jumlah penduduk Gunungpati pada tahun 2005
+								adalah 191.250 orang.
+							</h4>
+						</div>
+						<img class="icon" src="./assets/img/math-icon.png" />
+					</div>
+				</div>
+
+				<div class="swiper-slide slide-8">
+					<div class="container">
+						<div class="side-1"></div>
+						<div class="item">
+							<h1>Sekian & Terima Kasih</h1>
+						</div>
+						<div class="side-2"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-pagination"></div>
+		</div>
+
+		<script src="./assets/js/jquery-3.5.1.min.js"></script>
+		<script src="./assets/js/swiper.min.js"></script>
+		<script src="./assets/js/script.js"></script>
+	</body>
+</html>

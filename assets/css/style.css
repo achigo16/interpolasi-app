@@ -333,14 +333,32 @@ body {
 	height: 100vh;
 }
 .slide-8 .side-1 {
-	height: 54px;
+	animation: animate-reverse 18s linear infinite;
+	height: 55px;
 	width: 100%;
 	background-image: url(../img/putih-1.svg);
 }
 .slide-8 .side-2 {
-	height: 54px;
+	animation: animate 18s linear infinite;
+	height: 55px;
 	width: 100%;
 	background-image: url(../img/putih-2.svg);
+}
+@keyframes animate {
+	0% {
+		background-position-x: 0;
+	}
+	100% {
+		background-position-x: 1000px;
+	}
+}
+@keyframes animate-reverse {
+	0% {
+		background-position-x: 1000px;
+	}
+	100% {
+		background-position-x: 0;
+	}
 }
 .slide-8 .item {
 	display: flex;
